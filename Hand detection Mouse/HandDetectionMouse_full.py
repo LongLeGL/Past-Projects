@@ -30,10 +30,10 @@ camH = int(sh*2/3)
 cap.set(3, camW)  # Capture window's width
 cap.set(4, camH)  # Cap window's height
 targetId = 0  # mouse pointer = wrist
-trackRegionW = int(sw/4)
-trackRegionH = int(sh/4)
-trackRegionX = camW-200-trackRegionW
-trackRegionY = int(camH/2)
+trackRegionW = int(camW*38/100)
+trackRegionH = int(camH*38/100)
+trackRegionX = camW-150-trackRegionW
+trackRegionY = int(camH/2)-20
 smoothen = 6
 ##############################################
 detector = hdm.handDetector(False, 1, 1, 0.4, 0.3)
